@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="96dp">
+
+    <ImageView
+        android:id="@+id/btnChika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_chika_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnRiko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnRiko" />
+
+    <ImageView
+        android:id="@+id/btnYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnChika"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/ic_you_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRiko"
+        app:layout_constraintTop_toTopOf="@+id/btnRiko" />
+
+    <ImageView
+        android:id="@+id/btnRiko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnChika"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_riko_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/btnRuby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnYoshiko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnHanamaru"
+        android:layout_alignEnd="@+id/btnYou"
+        android:src="@mipmap/ic_yoshiko_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRuby"
+        app:layout_constraintTop_toTopOf="@+id/btnRuby" />
+
+    <ImageView
+        android:id="@+id/btnHanamaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChika"
+        android:layout_alignStart="@+id/btnChika"
+        android:src="@mipmap/ic_hanamaru_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnRuby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnRuby" />
+
+    <ImageView
+        android:id="@+id/btnRuby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnHanamaru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/ic_ruby_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnKanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHanamaru"
+        android:layout_alignStart="@+id/btnHanamaru"
+        android:src="@mipmap/ic_kanan_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnDia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnDia" />
+
+    <ImageView
+        android:id="@+id/btnMari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnDia"
+        android:layout_alignEnd="@+id/btnYoshiko"
+        android:src="@mipmap/ic_mari_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDia"
+        app:layout_constraintTop_toTopOf="@+id/btnDia" />
+
+    <ImageView
+        android:id="@+id/btnDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnKanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/ic_dia_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRuby" />
+
+</android.support.constraint.ConstraintLayout>

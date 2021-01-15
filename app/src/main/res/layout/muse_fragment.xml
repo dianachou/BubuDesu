@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="96dp">
+
+    <ImageView
+        android:id="@+id/btnHonoka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_honoka_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnUmi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUmi" />
+
+    <ImageView
+        android:id="@+id/btnKotori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnHonoka"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/ic_kotori_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUmi"
+        app:layout_constraintTop_toTopOf="@+id/btnUmi" />
+
+    <ImageView
+        android:id="@+id/btnUmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnHonoka"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_umi_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/btnHanayo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnMaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRin"
+        android:layout_alignEnd="@+id/btnKotori"
+        android:src="@mipmap/ic_maki_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHanayo"
+        app:layout_constraintTop_toTopOf="@+id/btnHanayo" />
+
+    <ImageView
+        android:id="@+id/btnRin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHonoka"
+        android:layout_alignStart="@+id/btnHonoka"
+        android:src="@mipmap/ic_rin_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnHanayo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnHanayo" />
+
+    <ImageView
+        android:id="@+id/btnHanayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/ic_hanayo_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnEli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRin"
+        android:layout_alignStart="@+id/btnRin"
+        android:src="@mipmap/ic_eli_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/btnNico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNico" />
+
+    <ImageView
+        android:id="@+id/btnNozomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnNico"
+        android:layout_alignEnd="@+id/btnMaki"
+        android:src="@mipmap/ic_nozomi_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNico"
+        app:layout_constraintTop_toTopOf="@+id/btnNico" />
+
+    <ImageView
+        android:id="@+id/btnNico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnEli"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/ic_nico_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHanayo" />
+
+</android.support.constraint.ConstraintLayout>
