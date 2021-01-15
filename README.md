@@ -1,6 +1,6 @@
 # BubuDesu
 
-BubuDesu is a mobile application developed in Android OS
+BubuDesu is a mobile application developed in Android OS.
 
 A user can interact with each main character from the series: 'Love Live School Idol Festival!' by tapping on the icon of the school idol. As a result, a random quote from that character is played, with an Engish translation being displayed on the bottom. 
 
